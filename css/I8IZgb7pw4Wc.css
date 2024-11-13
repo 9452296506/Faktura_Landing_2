@@ -1,0 +1,244 @@
+/* Target the top-level submenu items */
+.directions-menu .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+/* Adjust the width and styling for each top-level submenu item */
+.directions-menu .sub-menu > li {
+    width: 48%; /* Adjust the width as needed */
+    margin-bottom: 10px; /* Add margin to separate items */
+    text-align: left; /* Adjust the text alignment */
+}
+
+/* Target the second-level submenu items */
+.directions-menu .sub-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Additional styling for anchor links */
+.directions-menu .sub-menu a {
+    text-decoration: none; /* Remove underlines */
+    color: #333; /* Adjust the text color */
+}
+
+/* Reset the styling for second-level submenu items */
+.directions-menu .sub-menu ul li {
+ /*   width: auto;*/
+    margin-bottom: 0;
+    text-align: left;
+}
+
+body #directions-overlay-menu>li>ul {
+	width:200%;
+}
+
+#directions-overlay-menu>li.active>ul.sub-menu{
+	visibility: visible;
+	overflow-y: auto;
+	max-height: 100%;
+}
+
+
+/*mobile second menu*/
+
+#mobile-second-menu ul, #policy-menu, #mobile-primary-menu ul {list-style:none;padding:0;margin:0;}
+
+#mobile-primary-menu .actions-menu > a::before {display:none;}
+/*modal-content*/
+
+
+
+.mob-directionsmenu-modal ul {list-style:none;}
+.mob-directionsmenu-modal .sub-menu, .mobile-menu-wrapper .sub-menu {
+        display: none;
+    }
+
+.mobile-menu-wrapper .first-row-menu, .mob-directionsmenu-modal .first-row-menu {
+        cursor: pointer;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+.mobile-menu-wrapper .sub-menu li, .mob-directionsmenu-modal .sub-menu li {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+	
+	
+.mob-directionsmenu-modal .modal-header {background-color:var(--green);padding: 15px;}	
+.mob-directionsmenu-modal .modal-header .modal-heading {color:#fff;}
+.mob-directionsmenu-modal .modal-wrapper{
+	border-radius:0;
+	padding:0;
+}
+
+#doc-degree:after, #pacients:after {
+	position:absolute;
+	content:"%";
+}
+
+div.counter-section {border:none;}
+
+.social.menu>div {margin-bottom: 40px;}
+
+#mobile-second-menu .menu-item-has-children, #directions-mobilemenu .menu-item-has-children {position:relative;}
+.finger {
+	position:absolute;
+	right:20px;
+	padding: 0 12px
+	transition: transform 0.4s ease-in-out;
+}
+.finger.active {
+	rotate: 180deg;
+}
+
+.clinic-info_title>span {display:none;}
+
+
+.flag-icon {
+        background-size: cover;
+		line-height:28px;
+		width:49px;
+		margin-bottom:10px;
+		border-radius: 5px;
+}
+
+h4.data-filter-section-title {display:none;}
+.data-filter-section-title.mdtf-mb4 {
+	font-size: 20px;
+    margin-bottom: 10px!important;
+    display: block;
+	font-style: normal;
+}
+
+.icon-part img {
+        transition: filter 0.1s ease-in-out;
+    }
+
+.vi-site-bottom-panel .single-item:hover    .icon-part img {
+        filter: brightness(0) invert(1);
+}
+
+.search-page__services .widget-services-tabs, .search-page__services .price-grid {width:100%;}
+li.chirurgia>a, li.chirurgia>.main-category-wrap>a  {
+	background-image: url('../images/KnLnHrxhiBge.png');
+}
+
+.authors-block {
+	display:flex;
+	justify-content: space-between;
+	
+
+}	
+
+.author-item {
+	display:flex;
+	background: rgba(74, 117, 115, 0.1);
+    width: calc(50% - 15px);
+    box-sizing: border-box; 
+    margin-right: 30px;
+	border-radius:15px;
+	
+}
+
+.author-item img {
+	border-radius:15px;
+	width:190px;
+}
+.author-item:last-child {
+    margin-right: 0;
+}
+
+.author-about {
+	width: 100%;
+    padding: 16px 15px 0 20px;
+}
+
+.author-item  p.author-name {
+	font-family: Times New Roman;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0em;
+	padding-bottom: 15px;
+}
+.author-item  p.author-occ {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	padding-bottom: 15px;
+}
+
+.author-about>div {
+	display: block;
+    width: 100%;
+    text-align: end;
+	padding-bottom: 6px;
+}
+.author-about span{
+	position:relative;
+	padding-left:34px;
+}
+
+.author-about span::before {
+	position:absolute;
+	content:"";
+	width:24px;
+	height:24px;
+	background-image: url('../images/fY9GyXLtX2hv.svg');
+	top: -4px;
+    left: 0px;
+}
+
+.author-about .recensent span::before {
+	background-image: url('../images/XeTpMSzWLhiE.svg');
+}
+
+
+
+@media (max-width:1100px) {
+	.authors-block {
+		flex-direction: column;
+	}
+	.authors-block .author-item {
+		width:100%;
+		margin-bottom:30px;
+	}
+}
+
+@media (max-width:500px) {
+	.authors-block .author-item {
+		flex-direction: column;
+		position:relative;
+	}
+	.author-item img  {
+		width:100%;
+	}
+	.author-item .author, .author-item .recensent {
+		position:absolute;
+		top:10px;
+		right:10px;
+	}
+	.author-about p {
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
